@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rules</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+        integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <header class="Rules">
+        <button class="cancel">X</button>
+        <div class="content">
+            <h3>Game Rules 📃</h3>
+            <p>On a turn,a player rolls the die repeatedly, adding up the numbers rolled on the die.</p>
+            <p>
+                However, if a player rolls a 1, the player's turn is over and any points they have accumulated
+                during
+                this turn are forfeited.
+            </p>
+            <p>
+                Rolling a 1 doesn't wipe out yur entire socore from previous turns, just the total earned during
+                that
+                particular roll.
+            </p>
+            <p>A player can also choose to hold (stop rolling the die) if they do not want to take a chance of
+                rolling a
+                1 and losing all of their points from this turn. If the player chooses to hold, all of the points
+                rolled
+                during that turn are added to his or her score.</p>
+            <p>
+                A player win by being the first player to reach the <span class="target-score" style="display: inline;">
+                    0 </span>or more points
+                as
+                setted.
+            </p>
+            <hr size="5" color="white">
+            <p style="font-size: 1rem; margin-bottom: 8px;">Who's Playing</p>
+        </div>
+
+
+        <div class="details">
+            <div class="first-player">
+                <label for="first-player">
+                    <i class="fa fa-user"></i> <input type="text" placeholder="Enter First Player Name"
+                        id="first-player"></label>
+
+                <label for="second-player">
+                    <i class="fa fa-user"></i> <input type="text" placeholder="Enter Second Player Name "
+                        id="second-player"></label>
+            </div>
+
+
+            <div class="target-score">
+                <label for="Score">
+                    Score: <input type="number" placeholder="Enter the Target Points" id="Score">
+                </label>
+                <button class="btn play"> ▶️ Play</button>
+                <p id="id"></p>
+            </div>
+        </div>
+    </header>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
